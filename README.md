@@ -6,5 +6,10 @@ The main script is rawrr_mrm_extraction.R, which can be run after the appropiate
 To locally install R/R packages/extras, follow these instructions:
 
 After installing R, install the rawrr package via the Bioconductor commands:
-
+```
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+    
+BiocManager::install(version = "3.17")
+```
 
