@@ -41,7 +41,7 @@ install.packages(tidyverse)
 or your prefered method.
 
 
-Change the path in the R script accordingly before using it. The functions in the rawrr package are built thinking on more complex Orbitrap data, but small modifications can be performed to extract any kind of MS1/MS2 experiments from Thermo RAW format. Here we used it for MRM experiments. 
+Change the path in the R script accordingly before using it. The time it takes to process a batch of files depends on the number of files and the number of scans. The functions in the rawrr package are built thinking on more complex Orbitrap data, but small modifications can be performed to extract any kind of MS1/MS2 experiments from Thermo RAW format. Here we used it for MRM experiments. 
 
 The output, which is a master table (I called it hypertable), contains the scan data for each file and each precursor/fragments defined in the MS method. For each scan, the counts and the time are available, therefore the desired peak curve is given by joining the scan intensities with a line over the whole acquisition time.
 
