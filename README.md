@@ -48,3 +48,6 @@ The output, which is a master table (I called it hypertable), contains the scan 
 We haven't used any sophiscated method to select an specific time window to define the peak (peak picking), we just considered the whole acquisition time as our window of interest and integrate (area under the curve) the peak over that interval.
 
 Before the integration, we performed baseline correction using a common algorithm, Asymmetric Least Squares. The implementation I found is in Python, so I create a Python script for it, that also performs the integration part at the end using a trapezoid rule. The input of the Python script is the master hypertable from the R script.
+
+The Python script requires the [pybaselines](https://pybaselines.readthedocs.io/en/latest/) package. You can install it using pip or conda.
+
